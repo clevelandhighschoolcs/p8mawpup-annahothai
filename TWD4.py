@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- 
-
-import itertools  
+ 
 from bs4 import BeautifulSoup
 import requests
 from datetime import datetime
