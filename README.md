@@ -9,7 +9,7 @@ pip install beautifulsoup4
 2. Install the Requests library
 pip install requests
 
-3. Download and run the TWD5.py
+3. Download and run the TWD4.py
 
 4. A status read "In Stock" or otherwise and the date and time should appear on the screen
 
