@@ -3,14 +3,16 @@ For the code, I'm keeping track of the availability status, whether it's still "
 
 Enough blah blah, here's the instruction on how to install it
 1. Install Beautifulsoup via pip:
-easy_install pip  
-pip install beautifulsoup4
+
+- easy_install pip  
+- pip install beautifulsoup4
 
 2. Install the Requests library
-pip install requests
+
+- pip install requests
 
 3. Download and run the TWD4.py
 
 4. A status read "In Stock" or otherwise and the date and time should appear on the screen
 
-5. I also made the results print out as a text file so that you can see the comparison. Find an out.txt file on your computer and you should see the availibility status and the date printed on simple notepad file.  
+5. I also made the results print out as a text file so that you can see the comparison. Search for an "out.txt" file on your computer and you should see the availibility status and the date printed on simple notepad file.  
