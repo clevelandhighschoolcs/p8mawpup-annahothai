@@ -11,7 +11,7 @@ Enough blah blah, here's the instruction on how to install it
 
 - pip install requests
 
-3. Download and run the TWD4.py
+3. Download and run the TWD5.py
 
 4. A status read "In Stock" or otherwise and the date and time should appear on the screen
 
