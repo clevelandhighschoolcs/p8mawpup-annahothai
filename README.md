@@ -9,15 +9,16 @@ Enough blah blah, here's the instruction on how to install it:
 #**Instruction**
 
 1. Open the command prompt and install Beautifulsoup via pip:
-
-- easy_install pip  or follow the instruction to install pip on this link: https://pip.pypa.io/en/stable/installing/
-- pip install beautifulsoup4
+ 
+- ```easy_install pip```
+   
+   Or follow the instruction to install pip on this link: https://pip.pypa.io/en/stable/installing/
+- ```pip install beautifulsoup4```
 (if all else failed and you can't install Beautifulsoup, try downloading directly from https://www.crummy.com/software/BeautifulSoup/)
 
 2. Install the Requests library
-
-- pip install requests
-
+    ```pip install requests```
+    
 3. Create and activate a virtual environment you want to run the code in
 
 ```
@@ -32,7 +33,7 @@ C:\Python27\Scripts\virtualenv.exe -p C:\Python27\python.exe
 
 4. Download TWD5.py or copy the code and paste it to your notepad++ file (make sure to name your file with .py extension)
 
-5. Run TWD5.py by typing in \Yourfilelocation\TWD5.py in your virtual environment
+5. Run TWD5.py by typing in \Yourfilelocation\TWD5.py(or whatever you renamed your file) in your virtual environment
 
 4. A status read "In Stock" or otherwise and the date and time should appear on the screen
 
