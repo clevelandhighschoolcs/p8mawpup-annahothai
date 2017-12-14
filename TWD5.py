@@ -6,6 +6,17 @@ import requests
 from datetime import datetime
 import time
 
+#Import Twilio
+from twilio.rest import Client
+from datetime import datetime
+
+account_sid = 'XXX'
+auth_token = 'XXX'
+twilio_phone_number = 'XXX'
+my_phone_number = 'XXX'
+
+client = Client(account_sid, auth_token)
+
 # Following algorithm tries to install the library click if it hasn't already been installed.
 try:
     import click
@@ -54,6 +65,13 @@ def job():
 	with open('out.txt', 'a') as f:
 		f.write(avail[0].text)
 		f.write(datetime.now().strftime("%Y-%m-%d %H:%M"))
+		
+#Text the information via Twilio
+		body = name + ', ' + price + ', ' + str(datetime.now())
+		client . messages.create(
+			body=body,
+			to=my_phone_number,
+			from_=twilio_phone_number
 		
 if __name__ == '__main__':
     main()
