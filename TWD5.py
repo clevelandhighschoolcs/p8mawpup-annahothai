@@ -67,11 +67,11 @@ def job():
 		f.write(datetime.now().strftime("%Y-%m-%d %H:%M"))
 		
 #Text the information via Twilio
-		body = name + ', ' + price + ', ' + str(datetime.now())
-		client . messages.create(
-			body=body,
-			to=my_phone_number,
-			from_=twilio_phone_number
+	body = name + ', ' + price + ', ' + str(datetime.now())
+	client . messages.create(
+		body=body,
+		to=my_phone_number,
+		from_=twilio_phone_number
 		
 if __name__ == '__main__':
     main()
