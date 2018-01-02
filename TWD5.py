@@ -67,8 +67,8 @@ def job():
 	body = avail[0].text + ', ' + str(datetime.now())
 	client.messages.create(
 	to="your phone number",
-    from_="twilio phone number",
-    body=body)
+        from_="twilio phone number",
+        body=body)
 
 		
 if __name__ == '__main__':
