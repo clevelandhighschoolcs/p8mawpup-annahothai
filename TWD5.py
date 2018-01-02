@@ -6,14 +6,11 @@ import requests
 from datetime import datetime
 import time
 
-#Import Twilio
+#Import Twilio (pip install twilio)
 from twilio.rest import Client
-from datetime import datetime
 
-account_sid = 'XXX'
-auth_token = 'XXX'
-twilio_phone_number = 'XXX'
-my_phone_number = 'XXX'
+account_sid = 'your account_sid'
+auth_token = 'your auth_token'
 
 client = Client(account_sid, auth_token)
 
@@ -67,11 +64,12 @@ def job():
 		f.write(datetime.now().strftime("%Y-%m-%d %H:%M"))
 		
 #Text the information via Twilio
-	body = name + ', ' + price + ', ' + str(datetime.now())
-	client . messages.create(
-		body=body,
-		to=my_phone_number,
-		from_=twilio_phone_number
+	body = avail[0].text + ', ' + str(datetime.now())
+	client.messages.create(
+	to="your phone number",
+    from_="twilio phone number",
+    body=body)
+
 		
 if __name__ == '__main__':
     main()
